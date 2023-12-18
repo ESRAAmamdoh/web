@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Document</title>
+</head>
+<body>
+<div class="container d-flex flex-column justify-content-center align-items-center my-5">
+<h1 class="pb-5">
+    BookMarker
+</h1>
+<div class="empty "></div>
+<div class="form  w-100 p-3 py-4 mt-5 d-flex flex-column justify-content-center align-items-center">
+   
+    <h2>
+        <i class="fa-solid fa-bookmark"></i>
+        Bookmark your favorite sites
+        <i class="fa-solid fa-bookmark"></i>
+    </h2>
+<div class="body-form d-flex flex-column justify-content-center w-100 mb-4">
+    <label for="bookmarkername" class="fw-semibold pb-2">
+        <i class="fa-solid fa-book-bookmark"></i>
+        Site Name
+    </label>
+    <input type="text" class="form-control" id="bookmarkername" placeholder=" Enter Site Name">
+</div>
+<div class="body-form d-flex flex-column justify-content-center w-100">
+    <label for="BookMarkerUrl" class="fw-semibold pb-2">
+        <i class="fa-solid fa-link"></i>
+       URL
+    </label>
+    <input type="url" class="form-control" id="BookMarkerUrl" placeholder=" Enter URL">
+</div>
+  
+<button onclick="main()" class="btn btn-danger my-3 px-4 py-2">Submit</button>
+
+</div>
+<div class="empty mb-5 "></div>
+
+<table class="table table-striped table-hover text-center">
+    <thead>
+        <th>
+            Index
+        </th>
+        <th>
+            URL Name
+        </th>
+        <th>
+            visit
+        </th>
+        <th>delete</th>
+    </thead>
+    <tbody id="tbody-index">
+     
+     
+    </tbody>
+    </table>
+</div>
+
+
+<script src="js/javasc.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
